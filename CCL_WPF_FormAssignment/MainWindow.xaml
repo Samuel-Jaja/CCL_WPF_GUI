@@ -1,0 +1,61 @@
+﻿<Window x:Class="CCL_WPF_FormAssignment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CCL_WPF_FormAssignment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="900">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+
+             
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="140"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="30"/>
+           
+        </Grid.ColumnDefinitions>
+
+        <TextBlock  Grid.Row="1" Grid.Column="1" FontSize="25" Height="40"> Title</TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" Height="40"></TextBox>
+
+        <TextBlock  Grid.Row="2" Grid.Column="1" FontSize="25" Height="40"> Category</TextBlock>
+        <ComboBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Height="40"></ComboBox>
+
+        <TextBlock  Grid.Row="3" Grid.Column="1" FontSize="25" Height="40"> Status</TextBlock>
+        <ComboBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Height="40"></ComboBox>
+
+        <TextBlock  Grid.Row="4" Grid.Column="1" FontSize="25" Height="40"> Tags</TextBlock>
+        <TextBox Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Height="40"></TextBox>
+
+        <TextBlock  Grid.Row="1" Grid.Column="5" FontSize="25" Height="40" > Areas</TextBlock>
+        <ComboBox Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="2" Height="40"></ComboBox>
+
+        <TextBlock  Grid.Row="2" Grid.Column="5" FontSize="25" Height="40"> Assigned To</TextBlock>
+        <ComboBox Grid.Row="2" Grid.Column="6" Grid.ColumnSpan="2" Height="40"></ComboBox>
+
+        <TextBlock  Grid.Row="3" Grid.Column="5" FontSize="25" Height="40"> Estimate</TextBlock>
+        <TextBox Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="2" Height="40" ></TextBox>
+
+        <TextBlock  Grid.Row="4" Grid.Column="5" FontSize="25" Height="40"> Version</TextBlock>
+        <TextBox Grid.Row="4" Grid.Column="6" Grid.ColumnSpan="2" Height="40"></TextBox>
+
+       
+
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+﻿<Application x:Class="CCL_WPF_FormAssignment.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CCL_WPF_FormAssignment"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        
+         
+    </Application.Resources>
+</Application>
