@@ -1,0 +1,102 @@
+﻿<Window x:Class="CCL_WPF_FormAssignment.RegisterApplicant"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CCL_WPF_FormAssignment"
+        mc:Ignorable="d"
+        Title="Windows5" Height="700" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="General Details" FontSize="19" Grid.Row="1" Grid.Column="1" Grid.RowSpan="1" Grid.ColumnSpan="4" Margin="5">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="250" />
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="220"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Row="0" Grid.Column="0" >
+                    <TextBlock  Grid.Row="0" Grid.Column="0" FontSize="25" Height="40" Width="100"> Title:</TextBlock>
+                    <TextBlock  Grid.Row="0" Grid.Column="0" FontSize="25" Height="40" Width="120"  Margin="4" > Category:</TextBlock>
+                    <TextBlock  Grid.Row="0" Grid.Column="0" FontSize="25" Height="40" Width="100"  Margin="4" > Status:</TextBlock>
+                </StackPanel>
+                
+                <StackPanel Grid.Row="0" Grid.Column="1">
+                    <TextBox Grid.Row="0" Grid.Column="1" Height="40" Width="200" Margin="2" ></TextBox>
+                    <ComboBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Height="40" Margin="2" Width="200"></ComboBox>
+                    <ComboBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Height="40" Margin="2" Width="200"></ComboBox>
+                </StackPanel>
+
+                <StackPanel Grid.Row="0" Grid.Column="2">
+                    <TextBlock  Grid.Row="0" Grid.Column="0" FontSize="25" Height="40" Width="150" Margin="4"> Area:</TextBlock>
+                    <TextBlock  Grid.Row="0" Grid.Column="0" FontSize="25" Height="40" Width="150"  Margin="4"> Assigned To:</TextBlock>
+                    <TextBlock  Grid.Row="0" Grid.Column="0" FontSize="25" Height="40" Width="150"> Estimate:</TextBlock>
+
+                </StackPanel>
+
+                <StackPanel Grid.Row="0" Grid.Column="3">
+                    <ComboBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Height="40" Margin="2" Width="200" ></ComboBox>
+                    <ComboBox Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Height="40" Margin="2" Width="200"></ComboBox>
+                    <TextBox Grid.Row="0" Grid.Column="1" Height="40" Width="200" Margin="2"></TextBox>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="User Defined Fields" FontSize="19"  Grid.Row ="2" Grid.Column="1" Grid.RowSpan="1" Grid.ColumnSpan="4" Margin="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="340"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Row="0" Grid.Column="0">
+                    <TextBlock  FontSize="25" Height="40" Width="100"> Tags:</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="1">
+                    <TextBox  Grid.Row="0" Grid.Column="0" FontSize="25" Height="40" Width="200"></TextBox>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="2">
+                    <TextBlock  Grid.Row="0" Grid.Column="0" FontSize="25" Height="40" Width="90"> Version:</TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="0" Grid.Column="3">
+                    <TextBox  Grid.Row="0" Grid.Column="0" FontSize="25" Height="40" Width="200"></TextBox>
+                </StackPanel>
+               
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Comments" FontSize="19"  Grid.Row ="3" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="4" Margin="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBox  Margin="4"></TextBox>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
